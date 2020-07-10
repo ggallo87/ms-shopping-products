@@ -38,8 +38,8 @@ logging:
 
 eureka:
   client:
-    serviceUrl:
-      defaultZone: http://localhost:8099/eureka
+    service-url: http://localhost:8099/eureka
+      
 Feign:
   Hystrix:
     enabled: true
@@ -47,4 +47,5 @@ management:
   endpoints:
     web:
       exposure:
-        exclude: "*"
+        include: "*"
+
