@@ -38,7 +38,8 @@ logging:
 
 eureka:
   client:
-    service-url: http://localhost:8099/eureka
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka
       
 Feign:
   Hystrix:
